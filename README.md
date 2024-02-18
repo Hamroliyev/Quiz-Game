@@ -7,8 +7,7 @@ Let's have a look at the code parts.
 
 ## Fields
 
-`
-    int quizNumber = 1;
+`   int quizNumber = 1;
     int correctAnswers = 0;
     int randomNumber;
     string answer;
@@ -30,25 +29,23 @@ Let's have a look at the code parts.
 
 ## Mehtods
 
-`
-    **WelcomeApp Method =>**
-        void WelcomeApp()
-        {
-            Console.Clear();
-            Console.WriteLine("\t... Welcome Quiz Game ... \n");
-        }
-    **RandomNumber Method =>**
+`    void WelcomeApp()
+    {
+        Console.Clear();
+        Console.WriteLine("\t... Welcome Quiz Game ... \n");
+    }
+    
     int RandomNumber()
     {
         Random random = new Random();
         return random.Next(1,26);
     }
-    **Alphabet Method =>**
+
     char[] Alphabet()
     {
         return Enumerable.Range('A', 26).Select(asciiCode => (char)asciiCode).ToArray();
     }
-    **CheckAnswer Method =>**
+
     void CheckAnswer(string answer)
     {
         if (answer.Length != 1)
@@ -67,7 +64,7 @@ Let's have a look at the code parts.
             Console.WriteLine($"{quizNumber}-question isn't answerd correctly.");
         }
     }
-    **CheckAnswers Method =>**
+
     void CheckAnswers()
     {
         do
