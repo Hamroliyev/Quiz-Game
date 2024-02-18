@@ -10,7 +10,7 @@ string isContinued;
 do
 {
     CheckAnswers();
-    PrintResult();
+    PrintResult(quizNumber-1);
     Console.Write("Do you want to continue Yes/No : ");
     isContinued = Console.ReadLine();
 } while (isContinued == "Yes");
@@ -34,6 +34,12 @@ char[] Alphabet()
 
 void CheckAnswer(string answer)
 {
+    if (answer.Length != 1)
+    {
+        Console.WriteLine("Wrong input try it again");
+        return;
+    }
+
     if (answer == alphabet[randomNumber-1].ToString())
     {
         Console.WriteLine($"{quizNumber}-question is answerd correctly.");
@@ -59,7 +65,7 @@ void CheckAnswers()
     } while (quizNumber < 4);
 }
 
-void PrintResult()
+void PrintResult(int total)
 {
-    Console.WriteLine($"\n\t... You find {correctAnswers} questions out of 3. ...\n");
+    Console.WriteLine($"\n\t... You find {correctAnswers} questions out of {total}. ...\n");
 }
