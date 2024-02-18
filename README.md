@@ -31,23 +31,26 @@ Let's have a look at the code parts.
 ## Mehtods
 
 `
-    void WelcomeApp()
-    {
-        Console.Clear();
-        Console.WriteLine("\t... Welcome Quiz Game ... \n");
-    }
-    
+    `
+    **WelcomeApp Method =>**
+        void WelcomeApp()
+        {
+            Console.Clear();
+            Console.WriteLine("\t... Welcome Quiz Game ... \n");
+        }
+    `
+    **RandomNumber Method =>**
     int RandomNumber()
     {
         Random random = new Random();
         return random.Next(1,26);
     }
-    
+    **Alphabet Method =>**
     char[] Alphabet()
     {
         return Enumerable.Range('A', 26).Select(asciiCode => (char)asciiCode).ToArray();
     }
-    
+    **CheckAnswer Method =>**
     void CheckAnswer(string answer)
     {
         if (answer.Length != 1)
@@ -66,7 +69,7 @@ Let's have a look at the code parts.
             Console.WriteLine($"{quizNumber}-question isn't answerd correctly.");
         }
     }
-    
+    **CheckAnswers Method =>**
     void CheckAnswers()
     {
         do
