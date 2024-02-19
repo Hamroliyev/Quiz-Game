@@ -17,7 +17,6 @@ do
 
 void WelcomeApp()
 {
-    Console.Clear();
     Console.WriteLine("\t... Welcome Quiz Game ... \n");
 }
 
