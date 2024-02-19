@@ -89,3 +89,7 @@ Let's have a look at the code parts.
         Console.WriteLine($"\n\t... You find {correctAnswers} questions out of {total}. ...\n");
     }
 
+
+## Result
+
+![Result](https://github.com/Hamroliyev/Quiz-Game/blob/main/Assets/result.gif)
