@@ -7,17 +7,20 @@ Let's have a look at the code parts.
 
 ## Fields
 
-`   int quizNumber = 1;
+   
+    
+    int quizNumber = 1;
     int correctAnswers = 0;
     int randomNumber;
     string answer;
     char[] alphabet = Alphabet();
     string isContinued;
-`
+
 
 ## Main Part
 
-`
+
+
     do
     {
         CheckAnswers();
@@ -25,11 +28,13 @@ Let's have a look at the code parts.
         Console.Write("Do you want to continue Yes/No : ");
         isContinued = Console.ReadLine();
     } while (isContinued == "Yes");
-`
+
 
 ## Mehtods
 
-`    void WelcomeApp()
+   
+    
+    void WelcomeApp()
     {
         Console.Clear();
         Console.WriteLine("\t... Welcome Quiz Game ... \n");
@@ -83,4 +88,4 @@ Let's have a look at the code parts.
     {
         Console.WriteLine($"\n\t... You find {correctAnswers} questions out of {total}. ...\n");
     }
-`
+
